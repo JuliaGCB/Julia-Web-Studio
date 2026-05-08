@@ -3,40 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="/style/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>Julia Web Studio</title>
 </head>
 <body>
+    <header>
+        
+            <h2 id="logo">JWS</h2>
+            
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
 
-    <nav>
-        <div class="logo">
-            <h1>Julia Web Studio</h1>
-        </div>
-        <div id="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="services.html">Serviços</a></li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
+    </header>
 
-    <section id="hero">
-        <h2>Crie um site que gera clientes de verdade</h2>
-        <p>Sites modernos, rápidos e focados em conversão</p>
-        <button class="btn-primary">Entrar em Contato</button>
-        <button class="btn-secondary">Ver Sites</button>
-    </section>
+    <main>
+        <section id="hero">
+            <div class="glow"></div>
 
-    <section id="services">
-        <h2>Nossos Serviços</h2>
-        <p>Oferecemos soluções completas para sua presença digital.</p>
-    </section>
+            <h1>Crie um site que gera <br> clientes de verdade</h1>
+            <p>Sites modernos, rápidos e focados em <strong>conversão</strong></p>
+            <div class="buttons">
+                <button class="btn-primary" type="submit"><a href="http://google.com">Entrar em Contato</a></button>
+                <button class="btn-secondary" type="button"><a href="services.html">Ver Sites</a></button>
+            </div>
+
+        </section>
+
+        <section id="services">
+            <h2>Nossos Serviços</h2>
+            <p>Oferecemos soluções completas para sua presença digital.</p>
+
+            <div id="card-services">
+                <div class="card-service"> 
+                    <h3>Desenvolvimento de Sites</h3>
+                    <p>Desenvolvemos sites modernos e responsivos, focados em oferecer a melhor experiência para seus usuários e maximizar a conversão.</p>
+                </div>
+                <div class="card-service">
+                    <h3>Otimização SEO</h3>
+                    <p>Melhoramos a visibilidade do seu site nos motores de busca, aumentando o tráfego orgânico e atraindo mais clientes potenciais.</p>
+                </div>
+                <div class="card-service">
+                    <h3>Marketing Digital</h3>
+                    <p>Desenvolvemos estratégias de marketing digital eficazes para aumentar a visibilidade da sua marca e impulsionar o crescimento do seu negócio.</p>
+                </div>
+                <div class="card-service">
+                    <h3>Consultoria Digital</h3>
+                    <p>Oferecemos consultoria especializada para ajudar sua empresa a desenvolver e implementar estratégias digitais eficazes.</p>
+                </div>
+                <div class="card-service">
+                    <h3>Desenvolvimento de Aplicações</h3>
+                    <p>Criamos aplicações web e mobile sob medida, com foco em oferecer uma experiência de usuário excepcional e atender às necessidades específicas do seu negócio.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
 
     <footer>
         <p>&copy; 2023 Julia Web Studio. Todos os direitos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> |
+                <li><a href="about.html">Sobre</a></li> |
+                <li><a href="services.html">Serviços</a></li> |
+                <li><a href="contact.html">Contato</a></li> |
+            </ul>
+        </nav>
     </footer>
 
 </body>
+<script>
+
+    const hero = document.querySelector("#hero");
+
+    hero.addEventListener("mousemove", (e) => {
+    const rect = hero.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    hero.style.setProperty("--x", `${x}px`);
+    hero.style.setProperty("--y", `${y}px`);
+    });
+
+</script>
 </html>
