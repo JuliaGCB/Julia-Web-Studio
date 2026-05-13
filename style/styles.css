@@ -37,7 +37,7 @@ a:hover{
 }
 
 .btn-secondary {
-   background-color: transparent;
+   background-color: #151515;
     color: #fff;
     border: 1px solid #ffffff;
     padding: 10px 20px;
@@ -78,9 +78,8 @@ nav ul li a{
     color:#fff;
     text-decoration: none;
 }
-nav ul li a:hover{
+nav a:hover, nav a:focus{
     text-decoration: underline;
-
 }
 
 /*== Main ==*/
@@ -130,10 +129,17 @@ section#hero{
 h1{
     color: #ffffff;
     font-family: Montserrat;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 50px;
     line-height: 1em;
     margin: 0;
+}
+
+h2{
+    color: #2b2b2b;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 section#hero p{
     color: #fff;
@@ -182,6 +188,9 @@ section#services h2{
 
 /*== Why Us Section ==*/
 
+#why-us h2{
+    color: #fff;
+}
 section#why-us{
     padding: 50px 20px;
     background-color: #2E2E2E;
@@ -231,6 +240,30 @@ section#why-us{
 .content-table tbody th{
     background-color: rgba(59, 59, 59, 0.2);
 }
+
+/*== Portfolio Section ==*/
+#website{
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e4e3e3;
+}
+
+#website .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#website .img{
+    flex: 0.6;
+    max-width: 100%;
+}
+.img img{
+    width: 100%;
+    border-radius: 15px;
+}
+
 
 
 /*== Depoimentos Section ==*/
@@ -293,4 +326,43 @@ footer{
     justify-content: center;
     align-items: center;
     color : #fff;
+}
+
+
+/*== Responsive Design ==*/
+@media (max-width: 768px) {
+    .container{
+        padding: 20px;
+    }
+    header{
+        flex-direction: column;
+        padding: 20px;
+    }
+    nav ul{
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        gap: 10px;
+    }
+    section#hero h1{
+        font-size: 32px;
+    }
+    #card-services{
+        flex-direction: column;
+        align-items: center;
+    }
+    #why-us .container{
+        flex-direction: column;
+    }
+    #website .container{
+        flex-direction: column;
+    }
+    #testimonials-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
