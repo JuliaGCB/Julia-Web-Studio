@@ -53,7 +53,8 @@ This project was created to:
 
 ## 📸 Preview
 
-(Add a screenshot here later)
+[Version 1](/img/version1.png)
+
 
 ## 🌍 Live Demo
 
@@ -70,8 +71,9 @@ This project was created to:
 
 If you'd like to work with me or have any feedback:
 
-* Email: [your@email.com](mailto:your@email.com)
-* Instagram: @yourprofile
+* Email: [juliagcb1403@gmail.com](mailto:juliagcb1403@gmail.com)
+* Instagram: @juliagcamposb
+* LinkedIn: @juliagcb
 
 ---
 
