@@ -72,8 +72,8 @@ This project was created to:
 If you'd like to work with me or have any feedback:
 
 * Email: [juliagcb1403@gmail.com](mailto:juliagcb1403@gmail.com)
-* Instagram: @juliagcamposb
-* LinkedIn: @juliagcb
+* Instagram: [@juliagcamposb](https://www.instagram.com/juliagcamposb/)
+* LinkedIn: [@juliagcb](https://www.linkedin.com/in/juliagcb/)
 
 ---
 
