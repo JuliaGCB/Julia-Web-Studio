@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     
     <link rel="stylesheet" href="/style/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +13,7 @@
     <title>Julia Web Studio</title>
 </head>
 <body>
+
     <header>
         
             <h2 id="logo">JWS</h2>
@@ -35,8 +37,8 @@
             <h1>Crie um site que gera <br> clientes de verdade</h1>
             <p>Sites modernos, rápidos e focados em <strong>conversão</strong></p>
             <div class="buttons">
-                <button class="btn-primary" type="submit"><a href="#contact">Entrar em Contato</a></button>
-                <button class="btn-secondary" type="button"><a href="#services">Ver Sites</a></button>
+                <a href="#contact" class="btn-primary">Entrar em Contato</a>
+                <a href="#services" class="btn-secondary">Ver Sites</a>
             </div>
 
         </section>
@@ -48,28 +50,28 @@
                 <p>Oferecemos soluções completas para sua presença digital.</p>
 
                 <div id="card-services">
-                    <div class="card-service"> 
+                    <div class="card card-service"> 
                         <h3>Desenvolvimento de Sites</h3>
                         <p>Desenvolvemos sites modernos e responsivos, focados em oferecer a melhor experiência para seus usuários e maximizar a conversão.</p>
                     </div>
-                    <div class="card-service">
+                    <div class="card card-service">
                         <h3>Otimização SEO</h3>
                         <p>Melhoramos a visibilidade do seu site nos motores de busca, aumentando o tráfego orgânico e atraindo mais clientes potenciais.</p>
                     </div>
-                    <div class="card-service">
+                    <div class="card card-service">
                         <h3>Marketing Digital</h3>
                         <p>Desenvolvemos estratégias de marketing digital eficazes para aumentar a visibilidade da sua marca e impulsionar o crescimento do seu negócio.</p>
                     </div>
-                    <div class="card-service">
+                    <div class="card card-service">
                         <h3>Consultoria Digital</h3>
                         <p>Oferecemos consultoria especializada para ajudar sua empresa a desenvolver e implementar estratégias digitais eficazes.</p>
                     </div>
-                    <div class="card-service">
+                    <div class="card card-service">
                         <h3>Desenvolvimento de Aplicações</h3>
                         <p>Criamos aplicações web e mobile sob medida, com foco em oferecer uma experiência de usuário excepcional e atender às necessidades específicas do seu negócio.</p>
                     </div>
                 </div>
-                <button class="btn-secondary" type="submit" style="margin: 20px 0;"><a href="#contact">Entrar em Contato</a></button>
+                <a href="#contact" class="btn-secondary">Entrar em Contato</a>
             </div>
         </section>
 
@@ -118,7 +120,7 @@
                     <button class="btn-secondary" type="submit" style="margin: 20px 0;"><a href="#contact">Entrar em Contato</a></button>
                 </div>
                 <div class="img">
-                    <img src="img/website-removebg-preview.png" alt="website" max-width="100%" height="auto" loading="lazy">
+                    <img src="img/website-removebg-preview.png" alt="website" height="auto" loading="lazy">
                 </div>
             </div>
         </section>
@@ -129,17 +131,21 @@
                     <p>Veja o que nossos clientes têm a dizer sobre nossos serviços.</p>
     
                     <div id="testimonials-cards">
-                        <div class="testemonial-card">
+                        <div class=" card testemonial-card">
                             <p>"A Julia Web Studio transformou nossa presença online. O site que eles criaram é incrível e tem gerado muitos clientes para o nosso negócio!"</p>
                             <h4>- Ana Silva, CEO da Empresa X</h4>
                         </div>
-                        <div class="testemonial-card">
+                        <div class=" card testemonial-card">
                             <p>"O trabalho da Julia Web Studio superou nossas expectativas. Eles são profissionais, criativos e entregaram um site que realmente reflete a nossa marca."</p>
                             <h4>- Carlos Oliveira, Fundador da Startup Y</h4>
                         </div>
-                        <div class="testemonial-card">
+                        <div class=" card testemonial-card">
                             <p>"Recomendo a Julia Web Studio para qualquer empresa que queira melhorar sua presença digital. Eles são incríveis!"</p>
                             <h4>- Maria Santos, Gerente de Marketing da Empresa Z</h4>
+                        </div>
+                        <div class=" card  testemonial-card">
+                            <p>"A equipe da Julia Web Studio é fantástica. Eles entenderam nossas necessidades e criaram um site que realmente nos ajudou a crescer."</p>
+                            <h4>- João Pereira, Diretor de Tecnologia da Empresa W</h4>
                         </div>
                     </div>
                 </div>
@@ -152,22 +158,26 @@
                     <p>Pronto para levar seu negócio para o próximo nível? Entre em contato conosco hoje mesmo!</p>
                 </div>
                 <div class="content-form">
-                    <form action="#contact" method="POST" class="content-form">
-                        <div>
-                            <label for="name">Nome:</label>
-                            <input type="text" id="name" name="name" required>
+                    <form action="#contact" method="POST">
+                        <div class="form-input">
+                            <label for="name">Nome: <span>*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Escreva seu nome" required>
                         </div>
-                        <div>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                        <div class="form-input">
+                            <label for="phone" >Telefone: <span>*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="Escreva seu telefone" required>
                         </div>
-                        <div>
-                            <label for="project">Projeto:</label>
+                        <div class="form-input">
+                            <label for="email">Email: <span>*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Escreva seu email" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="project">Projeto: <span>*</span></label>
                             <input type="text" id="project" name="project" placeholder="Descreva brevemente seu projeto" required>
                         </div>
-                        <div>
+                        <div class="form-input">
                             <label for="message">Mensagem:</label>
-                            <textarea id="message" name="message" required></textarea>
+                            <textarea id="message" name="message" placeholder="Escreva sua mensagem" required></textarea>
                         </div>
                         <button class="btn-primary" type="submit">Enviar</button>
                     </form>
@@ -190,20 +200,7 @@
         </nav>
     </footer>
 
+    <script src="js/script.js"></script>
+
 </body>
-<script>
-
-    const hero = document.querySelector("#hero");
-
-    hero.addEventListener("mousemove", (e) => {
-    const rect = hero.getBoundingClientRect();
-
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    hero.style.setProperty("--x", `${x}px`);
-    hero.style.setProperty("--y", `${y}px`);
-    });
-
-</script>
 </html>
