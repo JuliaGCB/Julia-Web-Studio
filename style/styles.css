@@ -79,18 +79,41 @@ header{
     font-weight: 700;
     font-family: Montserrat;
 }
-nav ul{
-    list-style: none;
+
+.main-nav{
     display: flex;
     gap: 20px;
 }
-nav ul li a{
-    color:#fff;
+
+.main-nav a{
+    color: #fff;
     text-decoration: none;
+    padding: 14px 0;
 }
-nav a:hover, nav a:focus{
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.main-nav a.active{
     text-decoration: underline;
 }
+
+.main-nav a:hover, .main-nav a:focus{
+    text-decoration: underline;
+}
+
+.main-nav .icon{
+    display: none;
+}
+
+
+
 
 /*== Main ==*/
 
@@ -427,19 +450,9 @@ footer{
 
 
 /*== Responsive Design ==*/
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .container{
         padding: 20px;
-    }
-    header{
-        flex-direction: column;
-        padding: 20px;
-    }
-    nav ul{
-        flex-direction: column;
-        justify-content: left;
-        align-items: left;
-        gap: 10px;
     }
     section#hero h1{
         font-size: 32px;
@@ -461,5 +474,35 @@ footer{
     footer{
         flex-direction: column;
         gap: 10px;
+    }
+}
+
+/*== Responsive Navigation ==*/
+@media screen and (max-width: 600px) {
+    header{
+        padding: 20px;
+        flex-wrap: wrap;
+
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+    .main-nav a {
+        width: 100%;
+        padding: 14px 0;
+        text-align: left;
     }
 }
