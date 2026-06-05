@@ -13,7 +13,7 @@ const hero = document.querySelector("#hero");
     });
 
 
-    /*Menu Mobile*/
+    /*Menu Mobile - hamburguer*/
 
     const menuToggle = document.querySelector(".menu-toggle");
     const mainNav = document.querySelector(".main-nav");
